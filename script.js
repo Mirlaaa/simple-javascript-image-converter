@@ -3,6 +3,10 @@ let inputFormatType = document.getElementById("formatType");
 
 inputElement.addEventListener("input", function (event) {
 	inputFormatType = inputFormatType.value;
+    if (inputFormatType === undefined || inputFormatType === null){
+        inputFormatType = 'png'
+    }
+        
 	getBlobForImageAndDownload(this, inputFormatType);
 });
 
