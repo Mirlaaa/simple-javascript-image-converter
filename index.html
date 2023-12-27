@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Canvas tutorial - Image Converter</title>
+	</head>
+	<body>
+		<div id="main-content">
+			<select
+				name=""
+				id="formatType">
+				<option value="png">Convert to PNG</option>
+				<option value="webp">Convert to WEBP</option>
+				<option value="jpg">Convert to JPG</option>
+				<option value="jpeg">Convert to JPEG</option>
+			</select>
+
+			<input
+				type="file"
+				accept="image/*"
+				id="imageUploaded" />
+		</div>
+
+		<script
+			type="text/javascript"
+			src="script.js"></script>
+	</body>
+</html>
+
+<!-- https://pqina.nl/blog/compress-image-before-upload/
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob -->
+<!-- https://css-tricks.com/getting-started-with-the-file-system-access-api/ -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/File_System_API -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes -->
